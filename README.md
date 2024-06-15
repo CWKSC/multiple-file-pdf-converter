@@ -30,10 +30,6 @@ Press any Enter to exit ...
 
 ## Source code
 
-> [!WARNING]
-> 
-> 
-
 ```csharp
 using Microsoft.Office.Interop.PowerPoint;
 using Microsoft.Office.Interop.Word;
