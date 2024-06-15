@@ -1,44 +1,8 @@
-# multiple_file_pdf_converter
-
-> [!NOTE]
-> 
-> Created when I am in Higher Diploma
-> 
-> Teacher gives a lot of doc and ppt, open those file is slow
-> 
-> pdf can open in web browser, this is much convenient
-> 
-
-> [!NOTE]
-> 
-> The project is old (2020), I just recreated to update project from:
-> 
-> https://github.com/CWKSC/multithread_pdf_converter_backup
-> 
-> In fact I don't think it really run in multithread, so I rename it to multiple_file in this repo
-
-## Expected output
-
-```
-[1 / 3] aaa.pdf
-[2 / 3] bbb.pdf
-[3 / 3] ccc.pdf
-
-All work finsih! Spent 7.5423706 seconds
-Press any Enter to exit ...
-```
-
-## Source code
-
-> [!WARNING]
-> 
-> 
-
-```csharp
-using Microsoft.Office.Interop.PowerPoint;
+﻿using Microsoft.Office.Interop.PowerPoint;
 using Microsoft.Office.Interop.Word;
 using System;
 using System.Diagnostics;
+using System.Threading;
 using System.Windows.Forms;
 using Task = System.Threading.Tasks.Task;
 
@@ -94,6 +58,7 @@ namespace multiple_file_pdf_converter
                 }
             }
 
+            Thread.Sleep(2000);
             Task.WhenAll(tasks).Wait();
 
             stopwatch.Stop();
@@ -163,4 +128,3 @@ namespace multiple_file_pdf_converter
 
     }
 }
-```
