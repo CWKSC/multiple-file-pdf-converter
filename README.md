@@ -15,7 +15,7 @@
 > 
 > https://github.com/CWKSC/multithread_pdf_converter_backup
 > 
-> In fact I don't think it really run in multithread, so I rename it to multiple_file in this repo
+> In fact I don't think it really run in multithread, so I rename it to multiple-file in this repo
 
 ## Expected output
 
