@@ -1,4 +1,4 @@
-# multiple_file_pdf_converter
+# multiple-file-pdf-converter
 
 > [!NOTE]
 > 
